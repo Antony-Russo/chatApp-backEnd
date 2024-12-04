@@ -17,10 +17,7 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/chat', chatRoutes);
 
-mongoose.connect('mongodb+srv://russopaul771:36UUuTX8uxKK8a0M@cluster0.ochpu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+mongoose.connect('mongodb+srv://russopaul771:36UUuTX8uxKK8a0M@cluster0.ochpu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
   .then(() => console.log('MongoDB connected successfully'))
   .catch((err) => console.log('Error connecting to MongoDB:', err));
 
